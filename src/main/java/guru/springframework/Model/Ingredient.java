@@ -22,6 +22,10 @@ public class Ingredient {
         this.unitOfMeasure = unitOfMeasure;
     }
 
+    public Ingredient() {
+
+    }
+
     public Long getId() {
         return id;
     }

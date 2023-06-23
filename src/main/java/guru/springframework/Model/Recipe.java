@@ -1,6 +1,5 @@
 package guru.springframework.Model;
 
-import javassist.bytecode.ByteArray;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

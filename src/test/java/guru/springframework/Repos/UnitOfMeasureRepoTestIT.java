@@ -23,10 +23,18 @@ public class UnitOfMeasureRepoTestIT extends TestCase {
         super.setUp();
     }
 @Test
-    public void testFindByDescription() {
+    public void testFindByDescription() throws Exception {
     Optional<UnitOfMeasure> unitOfMeasure=unitOfMeasureRepo.findByDescription("Teaspoon");
     assertEquals("Teaspoon",unitOfMeasure.get().getDescription());
 
+
+    }
+@Test
+    public void testFindByDescriptionCup() throws Exception{
+
+        Optional<UnitOfMeasure> unitOfMeasure=unitOfMeasureRepo.findByDescription("Cup");
+
+        assertEquals("Cup",unitOfMeasure.get().getDescription());
 
     }
 }
